@@ -1,0 +1,11 @@
+<h1>Create a new article</h1>
+
+<%= form_for @article do |f|%>
+
+<h3><%= f.label :title %></h3>
+<p><%= f.text_field :title %></p>
+
+<h3><%= f.label :description %></h3>
+<p><%= f.text_area :description %></p>
+<%= f.submit%>
+<%end%>
