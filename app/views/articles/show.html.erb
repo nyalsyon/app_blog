@@ -1,7 +1,10 @@
 <h3>Selected article</h3>
+<%= link_to 'create new article',new_article_path%>
 <p>
-    Title:<%= @article.title%>
+    <h5>Title:</h5><%= @article.title%>
 </p>
 <p>
-  Description:<%=@article.description%>
+  <h5>Description:</h5><%=@article.description%>
 </p>
+<%= link_to 'Edit',edit_article_path(@article)%>
+<%= link_to 'Back to all articles list',articles_path(@article)%>
