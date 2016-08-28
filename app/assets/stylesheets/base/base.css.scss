@@ -1,6 +1,12 @@
 @import "reset";
+$h-text-color:#286090;
 body{
   background-color :#fcfcfc;
   margin: auto 0px;
 
+}
+
+h3{
+  color:$h-text-color;
+  
 }

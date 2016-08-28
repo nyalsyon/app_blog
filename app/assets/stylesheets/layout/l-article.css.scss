@@ -1,0 +1,24 @@
+$a-color:#286090;
+
+.l-article {
+  h3{
+   color:$a-color;
+   text-align: center;
+   text-transform: capitalize;
+ }
+  p{
+
+    font-family: sans-serif;
+    line-height: 20px;
+    text-align: justify;
+  }
+
+}
+
+  ul.article-bed {
+      li{
+          padding: 10px;
+          text-decoration: none;
+          display: inline-block;
+    }
+  }

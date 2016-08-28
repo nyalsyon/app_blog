@@ -1,0 +1,16 @@
+@import "l-section";
+@import "l-footer";
+@import "l-article";
+
+.container-fluid{
+  margin: 0px;
+  padding: 0px;
+}
+.l-welcome{
+
+  background-image:asset-url('blog.jpg');
+  background-size: cover;
+  min-height: 700px;
+  padding: 0px;
+  margin: 0px;
+}

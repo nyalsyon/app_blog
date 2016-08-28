@@ -1,0 +1,14 @@
+$m-bg-color:rgba(26, 212, 206, 0.19);
+
+.message{
+  margin-top: 20px;
+  background-color:$m-bg-color;
+  border-radius: 5px;
+  border: 1px solid rgba(51, 113, 194, 0.61);
+  ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    list-style: none;
+  }
+}

@@ -1,0 +1,11 @@
+  $t-content-color:#919191;
+
+  .article-table{
+    margin-top: 10px;
+    thead {
+      color:$h-text-color;
+    }
+    td {
+      color:$t-content-color;
+    }
+  }

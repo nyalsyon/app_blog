@@ -5,10 +5,5 @@ $navbar-border-radius: 0px;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "base/base";
-@import "layout/l-header";
-@import "module/navigation";
-
-.container-fluid{
-  margin: 0px;
-  padding: 0px;
-}
+@import "layout/layout";
+@import "module/module";
