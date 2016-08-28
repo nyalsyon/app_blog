@@ -12,7 +12,7 @@
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
       <ul class="article-bed">
-        <li><%= link_to 'Back to all articles', root_path(@article), class:"btn btn-info"%></li>
+        <li><%= link_to 'Back to all articles', articles_path(@article), class:"btn btn-info"%></li>
         <li><%= link_to 'Edit',edit_article_path(@article), class:"btn btn-info"%></li>
         <li><%= button_to 'Delete', article_path(@article), class:"btn btn-danger", method: :delete, action: :destroy,  onclick: 'return confirm("Are you sure?")'%></li>
       </ul>
