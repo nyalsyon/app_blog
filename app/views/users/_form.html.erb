@@ -1,0 +1,8 @@
+<%= form_for @user do |f|%>
+  <%=  f.lable :username%>
+  <%=  f.text_field :username%>
+  <%= f.lable :password %>
+  <%= f.password :password %>
+  <%= f.lable :email %>
+  <%= f.text_field :email %>
+<% end %>
