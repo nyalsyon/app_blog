@@ -3,20 +3,29 @@
     <div class="row">
       <h3>List of all articles</h3>
       <%= link_to 'create article',new_article_path, class: "btn btn-primary"%>
+
       <table class="table table-striped article-table">
         <thead>
           <tr>
               <th>Title</th>
               <th>Description</th>
+              <th>Email</th>
+              <th>Created at</th>
+              <th>Update at</th>
           </tr>
         <thead>
         <% @article.each do |article|%>
           <tr>
             <td><%= article.title%></td>
             <td><%= article.description%></td>
-            <td><%= link_to 'Edit',edit_article_path(article),class: "btn btn-info"%></td>
+            <td><%= article.user.email%></td>
+            <td><%= time_ago_in_words(article.created_at)%></td>
+            <td><%= time_ago_in_words(article.updated_at) %></td>
             <td><%= link_to 'Show',article_path(article),class: "btn btn-info"%></td>
-            <td><%= button_to 'Delete', article_path(article),class: "btn btn-danger", method: :delete, action: :destroy,  onclick: 'return confirm("Are you sure?")'%></td>
+            <%if article.user == current_user%>
+              <td><%= link_to 'Edit',edit_article_path(article),class: "btn btn-info"%></td>
+              <td><%= button_to 'Delete', article_path(article),class: "btn btn-danger", method: :delete, action: :destroy,  onclick: 'return confirm("Are you sure?")'%></td>  
+            <%end%>
           </tr>
         <% end %>
       </table>
