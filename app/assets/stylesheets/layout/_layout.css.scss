@@ -1,13 +1,13 @@
 @import "l-section";
 @import "l-footer";
-@import "l-article";
+
 
 .container-fluid{
   margin: 0px;
   padding: 0px;
 }
 .l-welcome{
-
+  z-index:-1;
   background-image:asset-url('blog.jpg');
   background-size: cover;
   min-height: 700px;
