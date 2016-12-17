@@ -1,0 +1,54 @@
+/* Buttons */
+
+/* Takes color hex as parameter and returns filled buttons with solid border */
+@mixin btn_fill($color){
+  background-color: $color;
+  color: #fff;
+  &:hover{
+    background-color: lighten($color, 10%);
+    color: #fff;
+    border: lighten($color, 10%) solid 2px;
+  }
+}
+
+/* Takes color hex as parameter and returns empty buttons with solid border */
+@mixin btn_empty($color){
+  border: $color solid 2px;
+  color: $color;
+  background: transparent;
+  &:focus{
+    color: $color;
+  }
+  &:hover{
+    background-color: $color;
+    color: #fff;
+  }
+}
+
+
+
+/* Images */
+
+/* Takes size as parameter and returns circular images */
+@mixin img_circle($size){
+  height: $size;
+  width: $size;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@mixin img_square($size){
+  height: $size;
+  width: $size;
+  overflow: hidden;
+}
+
+
+/* Take thickness width color to return a line element */
+@mixin line($thick, $color, $width){
+  margin:4px;
+  display: inline-block;
+  border-bottom: $thick solid $color;
+  width: $width;
+  height: $thick;
+}

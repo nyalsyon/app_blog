@@ -1,0 +1,11 @@
+.search-wrap{
+  input{
+    max-width: 200px;
+    display: inline-block;
+    }
+  input[type=text]:focus{
+    box-shadow: none;
+  }
+}
+.navbar-brand{
+  border-color: #ccc;}

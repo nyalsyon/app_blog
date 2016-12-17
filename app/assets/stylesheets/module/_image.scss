@@ -1,0 +1,32 @@
+.circle-img-xs {
+  @include img_circle(45px);
+}
+
+.circle-img-sm {
+  @include img_circle(60px);
+}
+
+.circle-img-md {
+  @include img_circle(80px);
+}
+
+.circle-img-lg {
+  @include img_circle(100px);
+}
+
+.square-img-sm {
+  @include img_square(60px);
+}
+
+.square-img-md {
+  @include img_square(80px);
+}
+
+.square-img-lg {
+  @include img_square(120px);
+}
+/* Images used in checkbox inputs */
+.img-responsive-inline {
+  width: 100%;
+  height: auto;
+}

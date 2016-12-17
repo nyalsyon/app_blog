@@ -1,0 +1,57 @@
+.btn{
+  @extend .r;
+}
+.btn-primary-empty{
+  @include btn_empty($brand-primary);
+}
+
+.btn-info-empty{
+  @include btn_empty($brand-info);
+}
+
+.btn-warning-empty{
+  @include btn_empty($brand-warning);
+}
+
+.btn-danger-empty{
+  @include btn_empty($brand-danger);
+}
+
+.btn-success-empty{
+  @include btn_empty($brand-success);
+}
+
+.btn-primary{
+  @include btn_fill($brand-primary);
+}
+
+.btn-info{
+  @include btn_fill($brand-info);
+  color: $brand-primary;
+}
+
+.btn-warning{
+  @include btn_fill($brand-warning);
+}
+
+.btn-default{
+  @extend .btn-info-empty;
+}
+
+.btn-control{
+  height: 45px;
+  width: 45px;
+  border-radius: 2px;
+  &:hover{
+    background-color: $brand-primary;
+  }
+}
+
+.btn-next{
+  background: asset-url('icon-next.png') center center no-repeat;
+}
+
+.btn-prev{
+  background: asset-url('icon-prev.png') center center no-repeat;
+}
+

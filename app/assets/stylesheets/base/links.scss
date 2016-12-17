@@ -1,0 +1,45 @@
+/* Link styles */
+
+a {
+  &:hover {
+  text-decoration: none;
+  }
+  &.active{
+    color: $brand-success !important;
+  }
+
+
+}
+
+.title {
+  color: $brand-info;
+  font-family: $font-family-serif;
+  font-weight: 700;
+  font-size: 16px;
+  @extend .cursor-pointer;
+}
+
+.title-md {
+  @extend .title;
+  font-size: 18px;
+}
+
+.title-lg {
+  @extend .title;
+  font-size: 22px;
+}
+
+.italic{
+  color: $brand-info;
+  font-size: $font-size-sm;
+  font-family: $font-family-base;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.continue {
+  @extend .italic;
+}
+
+a.btn.disabled{
+  background-color: #f5aa71;}

@@ -1,0 +1,67 @@
+.color-container{
+  height: 300px;
+  width: 400px;
+
+  .color-col{
+    height: 200px;
+  }
+
+  .color-col-off{
+    height: 100px;
+  }
+
+  .color-col-primary{
+    @extend .color-col;
+    background: $brand-primary;
+  }
+
+  .color-col-off-primary{
+    @extend .color-col-off;
+    background: lighten($brand-primary, 10%);
+  }
+
+  .color-col-warning{
+    @extend .color-col;
+    background: $brand-warning;
+  }
+
+  .color-col-off-warning{
+    @extend .color-col-off;
+    background: lighten($brand-warning, 10%);
+  }
+
+  .color-col-info{
+    @extend .color-col;
+    background: $brand-info;
+  }
+
+  .color-col-off-info{
+    @extend .color-col-off;
+    background: lighten($brand-info, 10%);
+  }
+
+  .color-col-success{
+    @extend .color-col;
+    background: $brand-success;
+  }
+
+  .color-col-off-success{
+    @extend .color-col-off;
+    background: lighten($brand-success, 10%);
+  }
+
+  .color-col-gray{
+    @extend .color-col;
+    background: #FCFCFC;
+  }
+
+  .color-col-off-gray{
+    @extend .color-col-off;
+    background:  lighten(#FCFCFC, 10%);
+  }
+
+}
+
+#form-bg{
+  background: gray;
+}

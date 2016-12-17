@@ -1,0 +1,18 @@
+.form-control{
+  box-shadow: none;
+  @extend .r;
+}
+input[type="text"]{
+
+}
+textarea{
+  resize: vertical;
+}
+.form-auth{
+	background: #fff;
+	max-width: 400px;
+	padding: 40px;
+	label{
+		font-weight: normal;
+	}
+}

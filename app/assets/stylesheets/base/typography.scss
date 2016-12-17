@@ -1,0 +1,49 @@
+/* Fonts */
+
+.lato {
+  font-family: $font-family-serif;
+}
+
+.opensans {
+  font-family: $font-family-base;
+}
+
+.lato-light {
+  font-family: lato-light;
+}
+
+
+.help-block {
+  text-transform: capitalize;
+}
+
+.fa-star {
+  color: $brand-success;
+  margin-right: 4px;
+}
+
+.fa-check {
+  color: $brand-success;
+  margin: 2px 0 0 8px;
+}
+
+.fa-minus-circle {
+  color: $brand-danger;
+  margin: 2px 0 0 8px;
+}
+
+.color-primary {
+  color: $brand-primary;
+}
+
+.color-danger {
+  color: $brand-danger;
+}
+
+.color-success {
+  color: $brand-success;
+}
+
+.color-warning {
+  color: $brand-warning;
+}

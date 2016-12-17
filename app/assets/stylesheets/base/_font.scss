@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'lato';
+  src:url(font-path('lato-regular-webfont.woff2')) format('woff2'),
+      url(font-path('lato-regular-webfont.woff')) format('woff');
+}
+
+@font-face {
+  font-family: 'lato';
+  src:url(font-path('lato-bold-webfont.woff2')) format('woff2'),
+      url(font-path('lato-bold-webfont.woff')) format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'lato-italic';
+  src:url(font-path('lato-italic-webfont.woff2')) format('woff2'),
+      url(font-path('lato-italic-webfont.woff')) format('woff');
+}
+
+@font-face {
+    font-family: 'lato-light';
+    src:url(font-path('lato-light-webfont.woff2')) format('woff2'),
+        url(font-path('lato-light-webfont.woff')) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'opensans';
+  src:url(font-path('OpenSans-Regular-webfont.eot')) format('eot'),
+      url(font-path('OpenSans-Regular-webfont.woff')) format('woff');
+  font-weight: normal
+}
+
+@font-face {
+  font-family: 'opensans';
+  src:url(font-path('OpenSans-Italic-webfont.eot')) format('eot'),
+      url(font-path('OpenSans-Italic-webfont.woff')) format('woff');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'opensans';
+  src:url(font-path('OpenSans-Bold-webfont.eot')) format('eot'),
+      url(font-path('OpenSans-Bold-webfont.woff')) format('woff'),
+      url(font-path('OpenSans-Bold-webfont.ttf')) format('ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'opensans';
+  src:url(font-path('OpenSans-Semibold-webfont.eot')) format('eot'),
+      url(font-path('OpenSans-Semibold-webfont.woff')) format('woff');
+  font-weight: 500
+}
