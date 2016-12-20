@@ -20,7 +20,11 @@
               </div>
               <div class="row">
                 <div class="col-md-12">
-                    <small>Created by: <%= article.user.email%></small> |
+                  <%if article.user.full_name.nil?%>
+                    <small>Created by: Unknown</small>
+                  <%else%>
+                    <small>Created by: <%= article.user.full_name%></small>
+                  <%end%> |
                     <small>Created at:<%= time_ago_in_words(article.created_at)%></small> |
                     <small>Updated by:<%= time_ago_in_words(article.updated_at) %></small>
                 </div>
