@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161220162236) do
+ActiveRecord::Schema.define(version: 20170827084215) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 20161220162236) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "user_id"
+    t.integer  "comment_id"
   end
 
   create_table "comments", force: :cascade do |t|
@@ -83,11 +84,15 @@ ActiveRecord::Schema.define(version: 20161220162236) do
     t.integer  "invited_by_id"
     t.integer  "invitations_count",      default: 0
     t.string   "full_name"
+    t.string   "provider"
+    t.string   "uid"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["invitation_token"], name: "index_users_on_invitation_token", unique: true
     t.index ["invitations_count"], name: "index_users_on_invitations_count"
     t.index ["invited_by_id"], name: "index_users_on_invited_by_id"
+    t.index ["provider"], name: "index_users_on_provider"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index ["uid"], name: "index_users_on_uid"
   end
 
 end
